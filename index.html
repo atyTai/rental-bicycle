@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+   
+    <title>仮島レンタリサイクル</title>
+    <!-- ************************************************ bootstrap.min.cssの読み込み -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- ************************************************ bootstrap.bundle.min.jsの読み込み -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"
+        defer>
+    </script>
+
+    <!-- ************************************************ Font Awesome -->
+    <link rel="stylesheet" href="styles/all.css">
+
+    <!-- ************************************************ 動きをつけるAOSの読み込み -->
+    <link rel="stylesheet" href="styles/aos.css">
+
+
+
+    <!-- ************************************************今回作成する styles.cssの読み込み -->
+    <link href="styles/style.css" rel="stylesheet">
+
+
+
+
+    <!-- slickの読み込み -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+</head>
+
+
+<body>
+    <!-- ************************************************ ナビゲーションバー開始 -->
+    <nav class="navbar  navbar-expand-lg head">
+        <!-- navbarのコンテナ -->
+        <div class="container ">
+
+            <!-- navbar-brandはロゴ部分。独自クラスのmy_navbar_brandで細かな調整。 -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+
+                <!-- ロゴのアイコンを配置。navbar_brand_logoは独自クラス。 -->
+                <img class="img-fluid navbar_brand_logo" src="img/仮島レンタサイクル.png" alt="サンプル画像">
+            </a>
+
+            <!-- navbar-togglerはハンバーガーボタンを表示・非表示にするクラス。 -->
+            <div class="hamburger_menu" style="display:none;">
+                <label class="hamburger_btn">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                    <!-- <img class="btn_close" style="display:none;" src="img/button_close.png" alt="ナビゲーションバーのボタン"> -->
+                </label>
+            </div>
+
+
+            <!-- これ以降がナビゲーションメニュー部分。説明は後述。 -->
+            <div class="d-lg-block  " id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <!-- これ以後のコードは編集しないため省略しています -->
+
+                    <li class="nav-item px-1">
+                        <a class="nav-link n1 my_nav_link my-2 nav_now" aria-current="page" href="#">ホーム</a>
+                    </li>
+
+                    <li class="nav-item px-1">
+                        <a class="nav-link n2 my_nav_link my-2" href="#green_top">サービス</a>
+                    </li>
+
+                    <li class="nav-item px-1">
+                        <a class="nav-link n3 my_nav_link my-2" href="#benefit">ベネフィット</a>
+                    </li>
+
+                    <li class="nav-item px-1">
+                        <a class="nav-link n4 my_nav_link my-2" href="#word_of_mouth">お客様の声</a>
+                    </li>
+
+                    <li class="nav-item px-1">
+                        <a class="nav-link n5 my_nav_link my-2" href="contact.html">アクセス</a>
+                    </li>
+
+                    <li class="nav-item px-1">
+                        <a class="nav-link n6 my_nav_link my-2" href="contact.html#contact">お問合せ</a>
+                    </li>
+
+                    <li class="nav-item d-flex justify-content-center">
+                        <a class="nav-link n7 my_nav_link my-2" style="margin-right:7px; padding-right:0;"
+                            href="#access"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                        <a class="nav-link n8 my_nav_link my-2" href="#contact"><i
+                                class="fa-brands fa-instagram fa-lg"></i></a>
+                    </li>
+
+
+
+                </ul>
+            </div>
+
+
+        </div>
+
+
+    </nav>
+
+
+    <!-- ************************************************ ナビゲーションバー終了 -->
+
+
+    <div class="mov_bai">
+        <img src="img/redbai.png" alt="赤自転車">
+    </div>
+
+    <div class="mov_scroll">
+        <img src="img/自転車.gif" alt="動く自転車">
+    </div>
+
+    <!-- ************************************************ カルーセル開始 -->
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- carousel-inner：カルーセルのキャプションと背景画像の部分。現在は1枚目だけ表示。 -->
+        <div class="carousel-inner shasin">
+            <!-- カルーセル1枚目 -->
+            <div class="carousel-item active">
+                <img src="img/24519446_s.jpg" alt="SAMURAI KITCHEN-1">
+
+                <!-- 親要素 -->
+                <div class="carousel-caption">
+
+                    <!-- h1タグは carousel-caption クラスの子要素 中に入っているので -->
+                    <!-- 独自クラスで位置とフォントを変更 -->
+                    <h1 class="my_carousel_caption">
+                        こちらは海がとても<br>
+                        きれいですよ！
+                    </h1>
+
+                    <!-- 親要素の閉じタグ h1タグは親要素の中にはいっています -->
+                </div>
+            </div>
+
+            <!-- カルーセル2枚目 -->
+            <div class="carousel-item">
+                <img src="img/2033034_s.jpg" alt="サンプル画像">
+                <div class="carousel-caption">
+                    <h1 class="my_carousel_caption">自然豊かな場所で、<br>サイクリングをしませんか
+
+                    </h1>
+                </div>
+            </div>
+
+            <!-- カルーセル3枚目 -->
+            <div class="carousel-item">
+                <img src="img/23976369_s.jpg" alt="サンプル画像">
+                <div class="carousel-caption">
+                    <h1 class="my_carousel_caption">とてもテキストテキスト<br>サイクリングテキストテキス
+
+                    </h1>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ************************************************ サービス開始 -->
+
+
+
+    <section id="service">
+        <div class="green_top" id="green_top">
+            <img src="img/green_top.png" alt="透明緑上">
+        </div>
+        <div class="container mb-1">
+            <h2 class=" text-center">サービス </h2>
+
+            <table data-aos="zoom-in" data-aos-once="true" data-aos-duration="3000">
+                <tr>
+                    <th></th>
+                    <th colspan="3">ご利用時間</th>
+                </tr>
+                <tr>
+                    <th>種類</th>
+                    <th>２から３時間以内</th>
+                    <th>３から５時間以内</th>
+                    <th>５時間以上</th>
+                </tr>
+                <tr>
+                    <td>普通自転車</td>
+                    <td>500円</td>
+                    <td>1000円</td>
+                    <td>1500円</td>
+                </tr>
+                <tr>
+                    <td>ロードバイク</td>
+                    <td>1000円</td>
+                    <td>1500円</td>
+                    <td>2000円</td>
+                </tr>
+
+            </table>
+
+
+
+        </div>
+
+
+
+    </section>
+    <div class="green_bottom">
+        <img src="img/green_bottom.png" alt="透明緑上">
+    </div>
+    <!-- ************************************************ ベネフィット -->
+    <section id="benefit">
+        <div class="container">
+            <div class="row mb-4" style="z-index: 4;">
+                <div class="col-lg-7 col-12 p-0" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" data-aos-once="true">
+                    <img src="img/24023805_s.jpg" class="img-fluid" alt="椅子でくつろぐ方">
+                </div>
+
+                <div class="col-lg-5 col-12">
+                    <div class="col-lg-7 col-12 p-4 benefit_text1">
+                        <h4 class="mb-0">テキスト</h4>
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        </p>
+
+                        <div class="redbi" data-aos="fade-down-left" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000" style="opacity:0;">
+                            <img src="img/006744.png" alt="自転車赤">
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <div class="row d-lg-flex flex-row-reverse mb-4">
+                <div class="col-lg-7 col-12 p-0" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" data-aos-once="true">
+                    <img src="img/man-3861989_1920.jpg" class="img-fluid" alt="椅子でくつろぐ方">
+                </div>
+
+                <div class="col-lg-5 col-12">
+                    <div class="col-lg-7 col-12 p-4  benefit_text2">
+                        <h4 class="mb-0 ">テキスト</h4>
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                        </p>
+                        <div class="yellowbi" data-aos="slide-right" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
+                            <img src="img/000059.png" alt="自転車黄">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-lg-7 col-12 p-0" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" data-aos-once="true">
+                    <img src="img/field-3629120_1920.jpg" class="img-fluid" alt="椅子でくつろぐ方">
+                </div>
+
+                <div class="col-lg-5 col-12">
+                    <div class="col-lg-7 col-12 p-4  benefit_text3">
+                        <h4 class="mb-0 ">すがすがしテキスト</h4>
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ
+                        </p>
+                        <div class="bluebi" data-aos="zoom-in-left" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
+                            <img src="img/006458.png" alt="自転車青">
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <!-- ************************************************ 自転車 -->
+    <section id="gif">
+        <div>
+            <img id="rect" src="img/自転車.gif" alt="自転車に乗る人">
+        </div>
+    </section>
+
+
+    <!-- ************************************************ お客様の声 -->
+    <section id="word_of_mouth">
+        <div class="container">
+
+            <h2 class="mb-4 text-center"><i class="fa-solid fa-envelope"></i>&nbsp;お客様の声 </h2>
+            <div class="row ">
+                <div class="col-lg-4 col-12 p-0 each_word" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" data-aos-once="true">
+                    <h4 class="mb-0">気持ち良かったです！</h4>
+                    <p class="mb-0 ">セ前がとても良くて良かったですテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <p>花子様</p>
+
+                </div>
+                <div class="col-lg-4 col-12 p-0 each_word" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" data-aos-once="true">
+                    <h4 class="mb-0 ">とても良い気分転換になった</h4>
+                    <p class="mb-0 ">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。また、是非乗りたいです。
+
+                    </p>
+                    <p>太郎様</p>
+                </div>
+                <div class="col-lg-4 col-12 p-0 each_word" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" data-aos-once="true">
+                    <h4 class="mb-0 ">良い旅の思い出になった</h4>
+                    <p class="mb-0 ">遠くから家族で旅行できたのですが、とても良かったです。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                    </p>
+                    <p>仮ノ介様</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ************************************************ ギャラリー開始 -->
+    <!-- カルーセル -->
+    <section id="carousel-section">
+        <div class="carousel2">
+            <div>
+                <img class="carouselImg" src="img/23819516_s_0802052811.png">
+            </div>
+            <div>
+                <img class="carouselImg" src="img/hintersee-3601004_1920_0802052849.png">
+            </div>
+            <div>
+                <img class="carouselImg" src="img/24446984_s_0802052952.png">
+            </div>
+            <div>
+                <img class="carouselImg" src="img/field-3629120_1920_0802052919.png">
+            </div>
+            <div>
+                <img class="carouselImg" src="img/24124934_s_0802052730.png">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- ************************************************ フッター開始 -->
+    <footer>
+
+
+        <p>Copyright &copy; 2022&copy;仮島レンタリサイクル&copy;All rights reserved.</p>
+
+    </footer>
+
+
+
+
+    <!-- ************************************************JSの読み込み  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+    <!-- slickの読み込み -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- アニメーションライブラリ -->
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+
+
+
+    <!-- AOSの読み込み -->
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script>
+        AOS.init({
+                delay: 200,
+            }
+
+        );
+    </script>
+
+    <script type="text/javascript" src="script.js"></script>
+
+
+</body>
+
+
+
+
+</html>
