@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="SAMURAI ENGINEER">
+    <title>仮島レンタリサイクル</title>
+    <!-- ************************************************ bootstrap.min.cssの読み込み -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- ************************************************ bootstrap.bundle.min.jsの読み込み -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"
+        defer>
+    </script>
+
+    <!-- ************************************************ Font Awesome -->
+    <link rel="stylesheet" href="styles/all.css">
+
+    <!-- ************************************************ 動きをつけるAOSの読み込み -->
+    <link rel="stylesheet" href="styles/aos.css">
+
+
+
+    <!-- ************************************************今回作成する styles.cssの読み込み -->
+    <link href="styles/style.css" rel="stylesheet">
+
+
+
+
+    <!-- slickの読み込み -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+</head>
+
+<body>
+    <!-- ************************************************ ナビゲーションバー開始 -->
+    <nav class="navbar  navbar-expand-lg head">
+        <!-- navbarのコンテナ -->
+        <div class="container">
+
+            <!-- navbar-brandはロゴ部分。独自クラスのmy_navbar_brandで細かな調整。 -->
+            <a class="navbar-brand" href="index.html">
+
+                <!-- ロゴのアイコンを配置。navbar_brand_logoは独自クラス。 -->
+                <img class="img-fluid navbar_brand_logo" src="img/仮島レンタサイクル.png" alt="サンプル画像">
+            </a>
+
+            <!-- navbar-togglerはハンバーガーボタンを表示・非表示にするクラス。 -->
+            <div class="hamburger_menu" style="display:none;">
+                <label class="hamburger_btn">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                    <!-- <img class="btn_close" style="display:none;" src="img/button_close.png" alt="ナビゲーションバーのボタン"> -->
+                </label>
+            </div>
+
+
+            <!-- これ以降がナビゲーションメニュー部分。説明は後述。 -->
+            <div class="d-lg-block  " id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <!-- これ以後のコードは編集しないため省略しています -->
+
+                    <li class="nav-item px-1">
+                        <a class="nav-link my_nav_link my-2" href="index.html">ホーム</a>
+                    </li>
+
+                    <li class="nav-item px-1">
+                        <a class="nav-link n2 my_nav_link my-2" href="index.html#green_top">サービス</a>
+                    </li>
+
+                    <li class="nav-item px-1">
+                        <a class="nav-link n3 my_nav_link my-2" href="index.html#benefit">ベネフィット</a>
+                    </li>
+
+                    <li class="nav-item px-1">
+                        <a class="nav-link n4 my_nav_link my-2" href="index.html#word_of_mouth">お客様の声</a>
+                    </li>
+
+                    <li class="nav-item px-1">
+                        <a class="nav-link n5 my_nav_link my-2 nav_now" href="#">アクセス</a>
+                    </li>
+
+                    <li class="nav-item px-1">
+                        <a class="nav-link n6 my_nav_link my-2" href="#contact">お問合せ</a>
+                    </li>
+
+                    <li class="nav-item d-flex justify-content-center">
+                        <a class="nav-link n7 my_nav_link my-2" style="margin-right:7px; padding-right:0;"
+                            href="#access"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                        <a class="nav-link n8 my_nav_link my-2" href="#contact"><i
+                                class="fa-brands fa-instagram fa-lg"></i></a>
+                    </li>
+
+
+
+                </ul>
+            </div>
+
+
+        </div>
+
+
+    </nav>
+
+
+    <!-- ************************************************ ナビゲーションバー終了 -->
+
+
+
+
+    <!-- ************************************************ アクセスセクション開始 -->
+    <section id="access" class="mb-3">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 text-center ">
+                    <h2 class=" text-center">アクセス</h2>
+                    <p>こちらで自転車の貸し出しを行っております</p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="row justify-content-center mb-5">
+
+                <div class="col-lg-7 mt-3 ">
+
+                    <div class="container  px-2">
+                        <!-- この部分にマップを配置 -->
+                        <!-- 横幅100% 高さ50vh -->
+                        <!-- <iframe -->
+                        <!-- src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.773586198959!2d139.6940468151642!3d35.65794958019969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b602972bb83%3A0xa6b553df33a5bd04!2z5L6N44Ko44Oz44K444OL44Ki!5e0!3m2!1sja!2sjp!4v1647751486994!5m2!1sja!2sjp" -->
+                        <!-- class="w-100" style="height: 50vh;" loading="lazy"></iframe> -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18353.0782258464!2d139.61106680701747!3d33.87320355810333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601673c2aaf39b0d%3A0x74db71fe86fe1aa5!2z5b6h6JS15bO25aSn5qmL!5e0!3m2!1sja!2sjp!4v1659746049552!5m2!1sja!2sjp"
+                            class="w-100" style="height: 50vh;" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5  d-flex justify-content-center mt-lg-5">
+                    <!-- 営業時間などのテキストを追加 -->
+
+                    <div class="restaurant_info py-3 parent_info">
+                        <div class="d-flex mb-3 info">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="p-0 m-0">岡崎県宮市仮島3-4-5</p>
+                        </div>
+                        <div class="d-flex mb-3 info">
+                            <i class="fa-solid fa-clock"></i>
+                            <p class="p-0 m-0">9:00-17:00&nbsp;&nbsp;(定休日：火曜日、水曜日）</p>
+                        </div>
+                        <div class="d-flex mb-3 info">
+                            <i class="fa-solid fa-phone"></i>
+                            <p class="p-0 m-0">12-1233-1234</p>
+                        </div>
+                        <div class="d-flex mb-3 info">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p class="p-0 m-0">karishima@example.com</p>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+    </section>
+
+    <!-- ************************************************ お問合せ -->
+
+    <section id="contact">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 text-center ">
+                    <h2 class=" text-center">お問合せ</h2>
+                    <p>お気軽にご連絡ください。</p>
+
+                </div>
+            </div>
+            <form id="form" action="https://api.staticforms.xyz/submit" method="post"
+                style="color:black;  margin-left:4%; margin-top: 8px; margin-bottom: 5%; font-family: 'メイリオ', Meiryo;"
+                onsubmit=return false;>
+
+                <input type="text" name="honeypot" style="display:none">
+                <input type="hidden" name="accessKey" value="4b6b92a3-476f-4c38-8fab-93cffcddf501">
+                <input type="hidden" name="subject" value="Webサイトからお問い合わせがありました" />
+                <input type="hidden" name="replyTo" value="at2y-5667@jcom.zaq.ne.jp">
+                <input type="hidden" name="redirectTo" value="">
+
+
+
+
+
+                <div class="d-lg-flex justify-content-around">
+                    <div class="d-flex flex-row  align-items-center">
+                        <label class="contact_text">お問い合わせ内容</label>
+                        <select style="margin-right:10%;" name="contents">
+                            <option value="origin" class="qw"　disabled="false"  style="color:rgba(0,0,0,0.5)">-選択してください-</option>
+                            <option value="text1">テキスト1</option>
+                            <option value="text2">テキスト2</option>
+                            <option value="text3">テキスト3</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>example1</label><input type="radio" name="example" value="example1">
+                        <label>example2</label><input type="radio" name="example" value="example2">
+                        <label>example3</label><input type="radio" name="example" value="example3">
+                    </div>
+                </div>
+                <br><br>
+                <label>氏名<span style="color:red;">&nbsp;*</span></label><br>
+                <input id="name" name="name" type="text" placeholder="名前をご入力ください" style="width:80%;"><br>
+
+                <br>
+                <label>ふりがな<span style="color:red;">&nbsp;*</span></label><br>
+                <input id="furigana" name="hurigana" type="text" placeholder="ふりがなをご入力ください" style="width:80%;">
+                <br><br>
+                <label>メールアドレス<span style="color:red;">&nbsp;*</span></label><br>
+                <input id="email" name="email" type="text" placeholder="メールアドレスをご入力ください" class="contact-textbox"
+                    style="width:80%;">
+
+                <br><br>
+                <label>電話番号（任意）</label><br>
+                <input id="tel" name="tel" type="text" placeholder="ご記入して頂ける場合「-（ハイフン）」をご使用ください" class="contact-textbox"
+                    style="width:80%;">
+                <br><br>
+
+
+                <div>
+                    <div class="contact-heading">
+                        <label class="contact-label">お問い合わせ内容<span style="color:red;">&nbsp;*</span></label>
+                    </div>
+                    <div>
+                        <textarea id="message" class="contact-textarea" placeholder="メッセージをご入力ください" name="message"
+                            style="width:100%; height: 40vh;"></textarea>
+                    </div>
+                </div>
+
+
+
+                <label class="kiyaku"><a href="https://aaa" style="color:black;">利用規約</a>に同意する</label>
+                <input id="agree" type="checkbox" name="agree">
+
+                <div style="margin-top:7px;">
+                    <input id="submit" class="boton" type="button" value="送信" onclick="submit();"
+                        style="margin-left:0%; background-color: #40d97a; border-color: #40d97a; ">
+                    <input disabled="true" type="reset" class="reset" value="リセット"
+                        style="background-color: #40d97a!important; border-color: #40d97a; ">
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+
+    <!-- ************************************************ フッター開始 -->
+    <footer>
+
+
+        <p>Copyright &copy; 2022&copy;仮島レンタリサイクル&copy;All rights reserved.</p>
+
+    </footer>
+
+
+
+
+    <!-- ************************************************JSの読み込み  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+    <!-- slickの読み込み -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- アニメーションライブラリ -->
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+
+
+
+    <!-- AOSの読み込み -->
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script>
+        AOS.init({
+                delay: 200,
+            }
+
+        );
+    </script>
+
+    <script type="text/javascript" src="script2.js"></script>
+
+
+</body>
+
+
+
+
+</html>
