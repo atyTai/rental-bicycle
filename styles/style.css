@@ -1,0 +1,389 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------- ナビゲーション */
+.head {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    min-height: 80px;
+}
+
+.navbar-brand {
+    min-height: 66px;
+}
+
+.navbar-brand:hover {
+
+    transition: 350ms;
+    display: inline-block;
+    opacity: 0.5;
+    border-radius: 50%;
+    background: radial-gradient(to center, rgba(255, 255, 255, 0) 20%, #40d97a);
+}
+
+.hamburger_btn:hover {
+    transition: 100ms;
+    color: #40d97a;
+    cursor: pointer;
+}
+
+#navbarNav a {
+    color: black;
+    transition: 300ms;
+    font-weight: 1000;
+}
+
+.nav_hover {
+    color: #40d97a !important;
+    -webkit-text-decoration: underline double #40d97a;
+    text-decoration: underline double #40d97a;
+}
+
+.nav_now {
+    background-color: #40d97a;
+    color: white !important;
+    border-radius: 40%;
+}
+
+@media screen and (max-width: 992px) {
+    .hamburger_menu {
+        display: inline-block !important;
+    }
+
+    #navbarNav {
+        width: 100%;
+        display: none;
+    }
+
+    #navbarNav a {
+        text-align: center;
+    }
+
+    .navbar-brand img {
+        max-width: 162px;
+    }
+}
+
+/* ----------------------------------------------- 動く自転車 */
+.mov_bai {
+    position: absolute;
+    z-index: 1;
+    transition: 5s;
+    max-width: 150px !important;
+}
+
+.mov_bai img {
+    width: 150px !important;
+    width: 100%;
+}
+
+.mov_scroll {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    max-width: 110px !important;
+}
+
+.mov_scroll img {
+    width: 100px !important;
+    width: 100%;
+}
+
+/* ----------------------------------------------- カールセル */
+/* carousel-itemの高さを32remに指定 */
+#myCarousel {
+    margin-top: 82px;
+    margin-bottom: 170px;
+}
+
+.carousel-item {
+    height: 32rem;
+}
+
+.carousel-item img {
+    /* 絶対位置を指定 */
+    min-width: 100%;
+    /* 高さはcarousel-itemに揃える */
+    height: 32rem;
+}
+
+.my_carousel_caption {
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9) !important;
+    opacity: 0;
+    transition: 1s;
+}
+
+.active h1 {
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 768px) {
+    .carousel-item {
+        height: 20rem;
+    }
+
+    .carousel-item img {
+
+        /* 高さはcarousel-itemに揃える */
+        height: 20rem;
+    }
+}
+
+/* ----------------------------------------------- サービス */
+.green_top {
+    position: absolute;
+    bottom: 99.9%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.green_top img {
+    width: 100%;
+    z-index: 1;
+}
+
+.green_bottom img {
+    width: 100%;
+}
+
+#service {
+    background-color: #40d97a;
+    padding: 10px;
+    margin-top: -80px;
+    position: relative;
+}
+
+#service h2 {
+    padding: 0;
+}
+
+table {
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+    z-index: 4;
+}
+
+table th,
+table td {
+    border: solid 0.5px black;
+    padding: 5px;
+}
+
+table th {
+    padding: 5px;
+}
+
+/* ----------------------------------------------- ベネフィット  */
+#benefit {
+    margin-top: -83px;
+    padding: 83px;
+    padding-bottom: 30px;
+}
+
+#benefit img {
+    width: 100%;
+    border-radius: 20%;
+}
+
+#benefit h4 {
+    background: linear-gradient(transparent 75%, rgba(0, 204, 78, 0.4) 75%);
+    text-align: center;
+    height: 0;
+    opacity: 0;
+    transition: 2.3s;
+}
+
+#benefit p {
+    height: 0;
+    opacity: 0;
+    transition: 4.5s;
+}
+
+.benefit_text1,
+.benefit_text2,
+.benefit_text3 {
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 30px;
+    margin-bottom: 15%;
+    padding: 40px !important;
+    border: 0.7px dashed #000;
+    border-radius: 10px;
+    height: auto;
+    position: relative;
+}
+
+.slide {
+    height: auto !important;
+    opacity: 2 !important;
+}
+
+.redbi {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    max-width: 174px !important;
+}
+
+.yellowbi {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    max-width: 167px !important;
+}
+
+.bluebi {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    max-width: 174px !important;
+}
+
+@media screen and (max-width: 992px) {
+
+    .benefit_text1,
+    .benefit_text2,
+    .benefit_text3 {
+        width: 100%;
+        padding: 8px !important;
+
+
+    }
+
+    #benefit {
+        padding: 5px;
+        height: auto !important;
+
+        padding-top: 100px
+    }
+}
+
+/* ---------------------------------------------自転車 */
+#gif {
+    margin-top: 0px;
+    height: 102px;
+    border-bottom: solid 6px #40d97a;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 10px;
+    overflow: hidden !important;
+}
+
+#gif img {
+    max-width: 100px;
+    position: absolute;
+    right: 0;
+    display: none;
+    z-index: 3;
+}
+
+.mov_gif {
+    display: inline-block !important;
+    max-width: 100px !important;
+}
+
+/* ----------------------------------------------- お客様の声  */
+#word_of_mouth {
+    text-align: center;
+    margin-top: -80px;
+    padding-top: 80px;
+    margin-bottom: 50px;
+}
+
+#word_of_mouth h4 {
+    -webkit-text-decoration: underline double #40d97a;
+    text-decoration: underline double #40d97a;
+}
+
+.each_word {
+    padding: 27px !important;
+}
+
+/* ----------------------------------------------- ギャラリー  */
+.carouselImg {
+    width: 90%;
+}
+
+/* ----------------------------------------------- アクセス  */
+#access {
+    margin-top: 90px !important;
+    margin-bottom: 80px !important;
+}
+
+.info {
+    height: 20px;
+}
+
+.info i {
+    margin-right: 5px;
+    color: #40d97a;
+    text-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+}
+
+.info i,
+.info p {
+    line-height: 20px;
+}
+
+.parent_info {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto;
+}
+
+#access h2,
+#contact h2 {
+    -webkit-text-decoration: underline double #40d97a;
+    text-decoration: underline double #40d97a;
+}
+
+/* ----------------------------------------------- お問合せ*/
+#contact {
+    margin-top: -82px;
+    padding-top: 82px;
+}
+
+
+
+/* // お問合せボタン */
+.boton:hover,
+.reset1:hover {
+    opacity: 0.5;
+}
+
+.contact_text {
+    width: 162px;
+}
+
+@media screen and (max-width: 992px) {
+
+    .contact_text {
+        width: 137px;
+    }
+}
+
+
+/* ----------------------------------------------- フッター */
+footer {
+    background-color: #40d97a;
+    height: 50px;
+}
+
+footer p {
+    text-align: center;
+    line-height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+
+    footer p {
+        font-size: 10px;
+    }
+
+}
